@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: veloracss-tracker
+    runtime: node
+    rootDir: tracker
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: GITHUB_ORG
+        value: VeloraX
+      - key: GITHUB_PROJECT_NUMBER
+        value: "10"
+      - key: GITHUB_WEBHOOK_SECRET
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: DISCORD_PUBLIC_KEY
+        sync: false
+      - key: DISCORD_APPLICATION_ID
+        sync: false
+      - key: DISCORD_BOT_TOKEN
+        sync: false
+      - key: DISCORD_GUILD_ID
+        sync: false
+      - key: DISCORD_OPERATOR_ROLE_IDS
+        sync: false
