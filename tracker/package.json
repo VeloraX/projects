@@ -1,0 +1,20 @@
+{
+  "name": "@veloracss/tracker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "worker:dev": "wrangler dev",
+    "worker:deploy": "wrangler deploy",
+    "commands:preview": "node scripts/print-command-registry.mjs",
+    "commands:register": "node scripts/register-commands.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^3.114.6"
+  }
+}

@@ -1,0 +1,15 @@
+name = "veloracss"
+main = "src/worker.js"
+compatibility_date = "2026-03-13"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+[vars]
+GITHUB_ORG = "VeloraX"
+GITHUB_PROJECT_NUMBER = 10
+TRACKER_STORAGE_MODE = "kv"
+
+[[kv_namespaces]]
+binding = "TRACKER_STATE_KV"
+id = "667a404b85ee4e35873aa8abfc5e0a91"
+preview_id = "667a404b85ee4e35873aa8abfc5e0a91"
